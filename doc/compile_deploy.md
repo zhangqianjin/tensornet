@@ -49,6 +49,14 @@ http_archive(
     ],
 )
 ```
+如果遇到 BUILD 118 fail, cc_binary(
+    name = "_pywrap_tn.so", 
+生成pywrap_tn.so 报错
+    
+Use --sandbox_debug to see verbose messages from the sandbox
+collect2: error: ld returned 1 exit status
+
+是因为没有安装boost.python，执行sudo apt-get install libboost-all-dev，解决
 
 
 
