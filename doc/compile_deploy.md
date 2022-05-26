@@ -58,6 +58,11 @@ collect2: error: ld returned 1 exit status
 
 是因为没有安装boost.python，执行sudo apt-get install libboost-all-dev，解决
 
+centos  bazel build error: no such package '@protobuf
+You should install it via your OS package manager (not the python one).
+For instance for CentOS you will need something like:
+sudo yum install patch
+
 
 
 ## 部署
